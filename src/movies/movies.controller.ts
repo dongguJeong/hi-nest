@@ -28,7 +28,7 @@ export class MoviesController {
     // fastify는 express 보다 2배 정도 빠르다.
     // 따라서 req,res 를 사용하는 걸 지양하도록 하자
     @Get()
-    getAll(@Req() req, @Res() res) : Movie[]{
+    getAll() : Movie[]{
         return this.moviesServices.getAll();
     }  
 

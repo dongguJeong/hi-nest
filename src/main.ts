@@ -18,7 +18,7 @@ async function bootstrap() {
 
     // 유저가 보낸 것을 우리가 원하는 타입으로 변환
     transform : true,
-  }))
+  }));
 
   await app.listen(3000);
 }
